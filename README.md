@@ -1,2 +1,2 @@
-# script_fresh_install
-Script de setup pour de nouvelles installations Kubuntu
+# miscellaneous
+useful stuff I need to run my Linux system
