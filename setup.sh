@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Configuration - Personnalisez ces listes selon vos besoins
+# Configuration 
 BASIC_PACKAGES=(
     "build-essential"
     "git"
@@ -10,9 +10,9 @@ BASIC_PACKAGES=(
     "htop"
     "net-tools"
     "software-properties-common"
-    "flatpak"           # Support Flatpak
-    "kde-config-flatpak" # Interface KDE pour Flatpak
-    "snapd"             # Support Snap
+    "flatpak"           
+    "kde-config-flatpak" 
+    "snapd"             
 )
 
 DEV_PACKAGES=(
@@ -25,7 +25,7 @@ DEV_PACKAGES=(
     "python3-pip"
     "nodejs"
     "npm"
-    "clang-format"      # Outil de formatage de code C/C++
+    "clang-format"      
 )
 
 # Paquets pour GL4D et autres bibliothèques graphiques/système
@@ -52,29 +52,29 @@ GRAPHICS_PACKAGES=(
 # Applications via apt
 APPS=(
     "emacs"
-    "flameshot"   # Outil de capture d'écran
-    "yakuake"     # Terminal déroulant pour KDE
-    # Ajoutez vos applications préférées ici
+    "flameshot"   
+    "yakuake"     
+    
 )
 
 # Applications via Flatpak
 FLATPAK_APPS=(
-    "com.github.johnfactotum.Foliate"  # Lecteur de livres électroniques Foliate
-    "org.librepcb.LibrePCB"            # Conception de circuits imprimés
-    "org.kde.kamoso"                   # Application de webcam pour KDE
-    "org.mapeditor.Tiled"              # Éditeur de tuiles pour jeux
-    "org.kde.kolourpaint"              # Application simple de dessin
-    "com.snes9x.Snes9x"                # Émulateur SNES
-    "org.gabmus.savedesktop"           # Sauvegarde des configurations de bureau
-    "org.kde.filelight"                # Visualiseur d'utilisation du disque
-    "com.obsproject.Studio"            # OBS Studio - Streaming et enregistrement
-    # Ajoutez d'autres applications Flatpak ici
+    "com.github.johnfactotum.Foliate"  
+    "org.librepcb.LibrePCB"            
+    "org.kde.kamoso"                   
+    "org.mapeditor.Tiled"              
+    "org.kde.kolourpaint"              
+    "com.snes9x.Snes9x"                
+    "org.gabmus.savedesktop"           
+    "org.kde.filelight"                
+    "com.obsproject.Studio"            
+    
 )
 
 # Applications à télécharger et installer depuis GitHub (.deb)
 declare -A DEB_PACKAGES=(
     ["fastfetch"]="https://github.com/fastfetch-cli/fastfetch/releases/latest/download/fastfetch-linux-amd64.deb"
-    # Ajoutez d'autres paquets .deb ici au format ["nom"]="url"
+    
 )
 
 
